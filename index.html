@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- FontAwesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <!-- navbar -->
@@ -18,17 +21,174 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><button class="dark-mode-toggle">🌙</button></li>
             </ul>
+              
             <div class="hamburger">&#9776;</div>
         </nav>
     </header>
     <section class="hero">
         <div class="hero-content">
-            <h1>Innovative Digital Solutions for a Tech-Driven World.</h1>
-            <p>Empowering businesses with AI-driven web solutions &amp; cutting-edge technology.</p>
-            <a href="#contact" class="cta-btn">Get a Quote</a>
+          <h1>Innovative Digital Solutions for a Tech-Driven World.</h1>
+          <p>Your one-stop agency for all your tech needs.</p>
+          <a href="#contact" class="btn">Get a Quote</a>
         </div>
-    </section>
-    
+        <div class="hero-background"></div>
+      </section>
+      
+
+      <section class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+          <div class="service-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Web Development</h3>
+                <p>Building responsive, modern websites.</p>
+              </div>
+              <div class="card-back">
+                <h3>Web Development</h3>
+                <p>Learn more about our web development services and how we can elevate your business!</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>App Development</h3>
+                <p>Creating powerful mobile applications.</p>
+              </div>
+              <div class="card-back">
+                <h3>App Development</h3>
+                <p>Learn more about our mobile application services and how we can elevate your business!</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>SEO Optimization</h3>
+                <p>Improving your website's visibility.</p>
+              </div>
+              <div class="card-back">
+                <h3>SEO Optimization</h3>
+                <p>Learn more about our SEO Optimization services and how we can elevate your business!</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>UI/UX Design</h3>
+                <p>Designing user-friendly experiences.</p>
+              </div>
+              <div class="card-back">
+                <h3>UI/UX Design</h3>
+                <p>Learn more about our UI/UX Design services and how we can elevate your business!</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Cloud Solutions</h3>
+                <p>Secure and scalable cloud solutions.</p>
+              </div>
+              <div class="card-back">
+                <h3>Cloud Solutions</h3>
+                <p>Learn more about our Cloud Solutions services and how we can elevate your business!</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Digital Marketing</h3>
+                <p>Effective online marketing strategies.</p>
+              </div>
+              <div class="card-back">
+                <h3>Digital Marketing</h3>
+                <p>Learn more about our Digital Marketing services and how we can elevate your business!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="projects">
+        <h2>Our Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="./assets/dataanalytics-img.png" alt="Project 1">
+            <div class="project-info">
+              <h3>Data Analytics Website</h3>
+              <p>A brief description of the project.</p>
+              <button class="view-details">View Details</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="/assets/poket-project.jpg" alt="Project 2">
+            <div class="project-info">
+              <h3>Poket Finance Website</h3>
+              <p>A brief description of the project.</p>
+              <button class="view-details">View Details</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/portfolio-img.png" alt="Project 2">
+            <div class="project-info">
+              <h3>Project Title 2</h3>
+              <p>A brief description of the project.</p>
+              <button class="view-details">View Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Modal Popup for Project Details -->
+      <div id="project-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h3>Project Details</h3>
+          <p id="modal-description"></p>
+          <!-- Add more project details as needed -->
+        </div>
+      </div>
+      
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Fill out the form below, and we’ll get back to you as soon as possible.</p>
+      
+        <form id="contact-form" action="your-backend-endpoint" method="POST">
+          <div class="input-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+      
+          <div class="input-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+      
+          <div class="input-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Type your message" required></textarea>
+          </div>
+      
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/mjdevstudio/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/jalal1122" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          
+        
+      </section>
+      
+      
 </body>
 <script src="./script.js"></script>
 <!-- Include GSAP in your HTML -->
