@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MJ Tech</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="dark-mode-toggle">🌙</button></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Innovative Digital Solutions for a Tech-Driven World.</h1>
+            <p>Empowering businesses with AI-driven web solutions &amp; cutting-edge technology.</p>
+            <a href="#contact" class="cta-btn">Get a Quote</a>
+        </div>
+    </section>
+    
+</body>
+<script src="./script.js"></script>
+<!-- Include GSAP in your HTML -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+    gsap.from(".hero h1", { opacity: 0, y: -50, duration: 1 });
+    gsap.from(".hero p", { opacity: 0, y: 50, duration: 1, delay: 0.5 });
+    gsap.from(".cta-btn", { opacity: 100, scale: 0.8, duration: 1, delay: 1 });
+</script>
+
+</html>

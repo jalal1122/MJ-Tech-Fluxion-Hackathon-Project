@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: #0d0d0d; /* Dark background */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1f51ff; /* Neon Blue */
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #14ffec; /* Electric Cyan Glow */
+  text-shadow: 0px 0px 10px #14ffec;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* Mobile Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #0d0d0d;
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Hero Section Styling */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("your-ai-background.jpg") no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+  padding: 0 20px;
+}
+
+/* Dark Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Text Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: cyan;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 15px #1f51ff;
+  opacity: 100; /* For animation */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  opacity: 100; /* For animation */
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #1f51ff;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 100; /* For animation */
+}
+
+.cta-btn:hover {
+  background: #14ffec;
+  box-shadow: 0px 0px 10px #14ffec;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .cta-btn {
+    padding: 12px 25px;
+  }
+}
