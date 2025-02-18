@@ -25,11 +25,13 @@ body {
   z-index: 1000;
 }
 
+
+
 /* Logo Styling */
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #1f51ff; /* Neon Blue */
+  color: #14ffec;/* Neon Blue */
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -808,4 +810,8 @@ h1 {
     100% {
       width: 100%;
     }
+  }
+
+  section{
+    background-color: #0d0d0d;
   }
